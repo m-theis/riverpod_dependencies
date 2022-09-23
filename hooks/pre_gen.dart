@@ -17,16 +17,10 @@ Future<void> run(HookContext context) async {
   final flutterDependencies = ['flutter_riverpod'];
 
   try {
-    for (var i = 0; i < dependencies.length; i++) {
-      await _addDependency(dependencies[i]);
-    }
-    for (var i = 0; i < devDependencies.length; i++) {
-      await _addDevDependency(devDependencies[i]);
-    }
+    await _addDependency(dependencies);
+    await _addDevDependency(devDependencies);
     if (isFlutter) {
-      for (var i = 0; i < flutterDependencies.length; i++) {
-        await _addDependency(flutterDependencies[i]);
-      }
+      await _addDependency(flutterDependencies);
     }
 
     progress.complete('Added Dependencies');
@@ -37,7 +31,7 @@ Future<void> run(HookContext context) async {
   }
 }
 
-Future<void> _addDevDependency(String package) {
+Future<void> _addDevDependency(List<String> package) {
   try {
     return Process.run(
       'flutter',
@@ -45,7 +39,7 @@ Future<void> _addDevDependency(String package) {
         'pub',
         'add',
         '-d',
-        package,
+        ...package,
       ],
     );
   } catch (e, s) {
@@ -53,14 +47,14 @@ Future<void> _addDevDependency(String package) {
   }
 }
 
-Future<void> _addDependency(String package) {
+Future<void> _addDependency(List<String> package) {
   try {
     return Process.run(
       'flutter',
       [
         'pub',
         'add',
-        package,
+        ...package,
       ],
     );
   } catch (e, s) {
