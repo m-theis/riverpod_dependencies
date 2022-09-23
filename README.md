@@ -26,7 +26,7 @@ Now generate the files.
 You can either fill in the variables on your CLI:
 
 ```shell
-mason make riverpod_dependencies --is_flutter false
+mason make riverpod_dependencies --is_flutter true
 ```
 
 **OR**
@@ -41,7 +41,7 @@ mason make riverpod_dependencies
 
 | Variable               | Description                  | Default         | Type      |
 |------------------------|------------------------------|-----------------|-----------|
-| `is_flutter`           | Also add flutter_riverpod    | false           | `boolean` |
+| `is_flutter`           | Also add flutter_riverpod    | true            | `boolean` |
 
 ## Outputs 📦
 

@@ -10,6 +10,6 @@ environment:
 vars:
   is_flutter:
     type: boolean
-    default: false
+    default: true
     description: Add Flutter Riverpod?
     prompt: Also add flutter_riverpod?
