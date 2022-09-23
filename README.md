@@ -11,13 +11,6 @@ The Brick adds:
 - [Freezed](https://pub.dev/packages/freezed) and
 - [Freezed Annotation](https://pub.dev/packages/freezed_annotation) for model generation.
 
-
-## Requirements 🚀
-
-Before you move forward, be sure to have 
-- all dependencies mentioned above added to your project trough your pubspec.yaml
-
-
 ## How to use 🚀
 
 First create your mason project by running `mason init` on any folder that you want.
