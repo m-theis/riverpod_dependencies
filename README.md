@@ -2,7 +2,7 @@
 
 [![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
 
-A Brick to create simple async features & modules for FLutter using Riverpod and Freezed
+A Brick to add common dependencies when working with riverpod and freezed
 
 The Brick adds:
 - [Riverpod](https://pub.dev/packages/riverpod) and
