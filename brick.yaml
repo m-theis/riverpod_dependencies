@@ -1,6 +1,6 @@
 name: riverpod_dependencies
 description: A brick to add common dependencies when working with Riverpod to your project
-repository: https://github.com/m-theis/async_module
+repository: https://github.com/m-theis/riverpod_dependencies
 
 version: 0.1.0
 
