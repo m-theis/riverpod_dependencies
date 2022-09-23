@@ -1,0 +1,15 @@
+name: riverpod_dependencies
+description: A brick to add common dependencies when working with Riverpod to your project
+repository: https://github.com/m-theis/async_module
+
+version: 0.1.0
+
+environment:
+  mason: ">=0.1.0-dev.35 <0.1.0"
+
+vars:
+  is_flutter:
+    type: boolean
+    default: false
+    description: Add Flutter Riverpod?
+    prompt: Also add flutter_riverpod?
